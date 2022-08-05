@@ -10,12 +10,12 @@ require 'PHPMailer-master/PHPMailerAutoload.php';
 */
 
 // an email address that will be in the From field of the email.
-$fromEmail = 'demo@domain.com';
-$fromName = 'Demo contact form';
+$fromEmail = 'emeritusmighty@gmail.com';
+$fromName = 'admin';
 
 // an email address that will receive the email with the output of the form
 $sendToEmail = 'emeritusmighty@gmail.com';
-$sendToName = 'Demo contact form';
+$sendToName = 'admin';
 
 // subject of the email
 $subject = 'New message from contact form';
@@ -57,7 +57,7 @@ try
     $mail = new PHPMailer;
     
     $mail->setFrom($fromEmail, $fromName);
-    $mail->addAddress($sendToEmail, $sendToName); // you can add more addresses by simply adding another line with $mail->addAddress();
+    $mail->addAddress($emeritusmighty@gmail.com, $admin); // you can add more addresses by simply adding another line with $mail->addAddress();
     $mail->addReplyTo($from);
     
     $mail->isHTML(true);
